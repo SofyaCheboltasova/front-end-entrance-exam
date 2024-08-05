@@ -1,0 +1,42 @@
+.box__info,
+.box__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.box__wrapper {
+  padding: 12px;
+  background-color: var(--box-color);
+  border-radius: 12px;
+  gap: 16px;
+}
+
+.box__photo,
+.box__info {
+  width: 12.4em;
+  height: 12.4em;
+}
+
+.box__languages {
+  height: 12.4em;
+}
+
+.box__info,
+.box__languages {
+  justify-content: space-between;
+}
+
+.box__tools {
+  width: 12.4em;
+}
+
+.box__interests {
+  width: 26.7em;
+  height: 17.7em;
+}
+
+.box__education {
+  width: 26.8em;
+  height: 28.9em;
+}
+

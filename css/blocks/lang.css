@@ -1,0 +1,28 @@
+.langs__block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lang__block {
+  display: flex;
+  gap: 17px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lang__name {
+  font: var(--font-primary-medium);
+}
+
+.progressBar__wrapper {
+  width: 16.8em;
+  height: 1.1em;
+}
+
+.progressBar {
+  height: 100%;
+  background-color: var(--secondary-color);
+  border-radius: 3px;
+}
+

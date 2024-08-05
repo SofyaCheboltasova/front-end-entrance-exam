@@ -1,0 +1,16 @@
+.interests__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.interests_modal {
+  padding: 0.4em 1em;
+  border-radius: 40px;
+  background-color: var(--primary-color);
+
+  text-wrap: nowrap;
+
+  font: var(--font-primary-regular);
+}
+

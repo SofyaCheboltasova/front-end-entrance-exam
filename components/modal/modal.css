@@ -1,0 +1,61 @@
+.modal__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.short {
+  width: 11.6em;
+}
+
+.modal__header {
+  font: var(--font-primary-medium);
+}
+
+.modal__description,
+.modal__li {
+  font: var(--font-small-regular);
+}
+
+.modal__topBarSmall {
+  font: var(--font-small-regular);
+}
+
+.modal__topBarBig {
+  font: var(--font-primary-medium);
+}
+
+.modal__contentBlock {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.modal__wrapper.short .modal__contentBlock {
+  flex-direction: column;
+}
+
+.modal__ul {
+  max-width: 23.9em;
+}
+
+.modal__li {
+  position: relative;
+  padding-left: 1em;
+}
+
+.modal__li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+}
+
+.modal__wrapper.short .modal__li::before,
+.modal__wrapper.short .modal__li {
+  content: none;
+  padding-left: 0;
+}
+
