@@ -1,4 +1,5 @@
 import { createElement, appendChildren } from "../../js/utils";
+import jsPDF from "jspdf";
 
 export default class Button {
   #text;
@@ -23,6 +24,22 @@ export default class Button {
     appendChildren(wrapper, buttonText);
 
     return wrapper;
+  }
+
+  downloadPDF(element) {
+    const doc = new jsPDF();
+    const specialElementHandlers = {
+      "#editor": function () {
+        return true;
+      },
+    };
+
+    doc.fromHTML(element.innerHTML, 15, 15, {
+      width: 190,
+      elementHandlers: specialElementHandlers,
+    });
+
+    doc.save("resume.pdf");
   }
 }
 

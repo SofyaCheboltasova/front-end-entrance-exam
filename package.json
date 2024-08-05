@@ -20,6 +20,7 @@
     "vite-plugin-eslint": "^1.8.1"
   },
   "dependencies": {
-    "eslint-config-prettier": "^9.1.0"
+    "eslint-config-prettier": "^9.1.0",
+    "jspdf": "^2.5.1"
   }
 }
