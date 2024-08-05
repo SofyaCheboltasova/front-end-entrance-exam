@@ -29,16 +29,19 @@ function setPage() {
   const experienceBox = getExperienceBox();
   const educationBox = getEducationBox();
   const interestsBox = getInterestsBox();
-  const toolsBox = new Button("Download CV");
+  const toolsBox = new Box("box__tools", "Tools");
 
-  const downloadButton = createElement("button", "page__button", "Download CV");
+  const downloadButton = new Button("button", "page__button", "Download CV");
+  downloadButton.wrapper.addEventListener("click", () => {
+    downloadButton.downloadPDF(page);
+  });
 
   appendChildren(sectionOne, [photoBox, infoBox, languagesBox]);
   appendChildren(sectionTwo, [experienceBox, toolsBox.block]);
   appendChildren(sectionThree, [educationBox, interestsBox]);
   appendChildren(page, [sectionOne, sectionTwo, sectionThree]);
 
-  appendChildren(wrapper, [page, downloadButton]);
+  appendChildren(wrapper, [page, downloadButton.wrapper]);
 
   appendChildren(document.body, wrapper);
 }
